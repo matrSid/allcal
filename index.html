@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>All-Calculator</h1>
+        <div id="main-menu">
+            <button onclick="showMenu('arithmetic-menu')">Arithmetic</button>
+            <button onclick="showMenu('geometry-menu')">Geometry</button>
+            <button onclick="showMenu('pythagoras-menu')">Pythagoras</button>
+            <button onclick="showMenu('sqrt-menu')">Square Root</button>
+            <button onclick="showMenu('exponential-menu')">Exponential</button>
+        </div>
+
+        <div id="arithmetic-menu" class="sub-menu">
+            <h2>Arithmetic</h2>
+            <button onclick="arithmetic('add')">Addition</button>
+            <button onclick="arithmetic('sub')">Subtraction</button>
+            <button onclick="arithmetic('mul')">Multiplication</button>
+            <button onclick="arithmetic('div')">Division</button>
+            <button onclick="backToMain()">Back</button>
+            <div id="arithmetic-result"></div>
+        </div>
+
+        <div id="geometry-menu" class="sub-menu">
+            <h2>Geometry</h2>
+            <button onclick="geometry('square-area')">Square Area</button>
+            <button onclick="geometry('square-perimeter')">Square Perimeter</button>
+            <button onclick="geometry('rectangle-area')">Rectangle Area</button>
+            <button onclick="geometry('rectangle-perimeter')">Rectangle Perimeter</button>
+            <button onclick="geometry('triangle-area')">Triangle Area</button>
+            <button onclick="geometry('circle-area')">Circle Area</button>
+            <button onclick="geometry('circle-circumference')">Circle Circumference</button>
+            <button onclick="backToMain()">Back</button>
+            <div id="geometry-result"></div>
+        </div>
+
+        <div id="pythagoras-menu" class="sub-menu">
+            <h2>Pythagoras</h2>
+            <button onclick="pythagoras('hypotenuse')">Hypotenuse</button>
+            <button onclick="pythagoras('leg')">Leg</button>
+            <button onclick="backToMain()">Back</button>
+            <div id="pythagoras-result"></div>
+        </div>
+
+        <div id="sqrt-menu" class="sub-menu">
+            <h2>Square Root</h2>
+            <button onclick="sqrt('single')">Single Number</button>
+            <button onclick="sqrt('range')">Range of Numbers</button>
+            <button onclick="backToMain()">Back</button>
+            <div id="sqrt-result"></div>
+        </div>
+
+        <div id="exponential-menu" class="sub-menu">
+            <h2>Exponential</h2>
+            <button onclick="exponential('single')">Single Number</button>
+            <button onclick="exponential('square-single')">Square Single Number</button>
+            <button onclick="exponential('square-range')">Square Range of Numbers</button>
+            <button onclick="backToMain()">Back</button>
+            <div id="exponential-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
